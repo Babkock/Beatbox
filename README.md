@@ -1,5 +1,7 @@
 # Beatbox 1.6
 
+![test](https://raw.githubusercontent.com/Babkock/Beatbox/master/files/PIC1.png)
+
 Hello, I am Tanner Babcock. This is a restoration, out of several in a series, of one of my PSP homebrew programs. *Beatbox* version 1.6 was completed May 2011. The code was all written by me.
 
 ## Original Readme
