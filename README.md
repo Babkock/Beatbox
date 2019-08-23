@@ -2,7 +2,7 @@
 
 ![test](https://raw.githubusercontent.com/Babkock/Beatbox/master/files/PIC1.png)
 
-Beatbox version 1.6 was originally completed in May 2011. Back in those days, I compiled images directly into the binary, for loading them from the virtual file system in RAM. fopen() calls with a "ms0:/" prefix on the file path denotes the PSP's Memory Stick. "ram:/" denotes RAM.
+Beatbox version 1.6 was originally completed in May 2011. Back in those days, I compiled images directly into the binary, for loading them from the virtual file system in RAM. `fopen()` calls with a `ms0:/` prefix on the file path denotes the PSP's Memory Stick. `ram:/` denotes RAM. The various flash drives for loading firmware and system resources can also be accessed via `flash0:/`, `flash1:/`, and so on.
 
 ## Original Readme
 
