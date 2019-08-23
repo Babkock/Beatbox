@@ -36,7 +36,7 @@ void BBsoundsetswitch(char soundsetaa) {
 		sound.seven = oslLoadSoundFile("sounds/bongo_7.wav", OSL_FMT_NONE);
 		sound.eight = oslLoadSoundFile("sounds/bongo_8.wav", OSL_FMT_NONE);
 	}
-	else /* if (soundsetaa == TONE) */ {
+	else {
 		sound.one = oslLoadSoundFile("sounds/tones_1.wav", OSL_FMT_NONE);
 		sound.two = oslLoadSoundFile("sounds/tones_2.wav", OSL_FMT_NONE);
 		sound.three = oslLoadSoundFile("sounds/tones_3.wav", OSL_FMT_NONE);
@@ -47,7 +47,7 @@ void BBsoundsetswitch(char soundsetaa) {
 		sound.eight = oslLoadSoundFile("sounds/tones_8.wav", OSL_FMT_NONE);
 	}
 	if (!sound.one || !sound.two || !sound.three || !sound.four || !sound.five ||
-		!sound.six || !sound.seven || !sound.eight ) {
+		!sound.six || !sound.seven || !sound.eight) {
 		BBmsg(10, 10, "ERROR: one or more sound files missing, exiting...");
 		oslEndGfx();
 		oslQuit();

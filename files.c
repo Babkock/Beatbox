@@ -5,7 +5,7 @@
 #include "main.h"
 #include "files.h"
 
-void setUpVirtualFileMenu() {
+void setUpVirtualFileMenu(void) {
 	OSL_VIRTUALFILENAME ram_files[] = {
 		{"ram:/babkock.png", (void*)babkock_data, sizeof(babkock_data), &VF_MEMORY},
 		{"ram:/background.png", (void*)background_data, sizeof(background_data), &VF_MEMORY},
@@ -15,7 +15,7 @@ void setUpVirtualFileMenu() {
 	oslAddVirtualFileList(ram_files, oslNumberof(ram_files));
 }
 
-void BBloadfiles() {
+void BBloadfiles(void) {
 	musexist = TRUE;
 	BBmsg(10, 10, "Loading virtual files to RAM...");
 	setUpVirtualFileMenu();

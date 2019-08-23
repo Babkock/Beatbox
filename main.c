@@ -21,7 +21,7 @@ void BBmsg(int x, int y, const char *str) {
 	return;
 }
 
-void BBinit() {
+void BBinit(void) {
 	oslInit(0);
 	oslInitGfx(OSL_PF_8888, 1);
 	oslInitConsole();
@@ -39,7 +39,7 @@ void BBinit() {
 	return;
 }
 
-int main() {
+int main(void) {
 	BBinit();
 	int foo;
 	oslCls();

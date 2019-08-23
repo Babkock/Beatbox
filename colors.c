@@ -5,7 +5,7 @@
 #include <string.h>
 #include "main.h"
 
-void BBdrawgrid() {
+void BBdrawgrid(void) {
 	if (colorset == BLACK)
 		oslDrawFillRect(75, 51, 405, 221, RGBA(255, 255, 255, 200));
 	else
@@ -45,9 +45,9 @@ void BBdrawgrid() {
 	return;
 }
 
-void BBeditcolors() {
+void BBeditcolors(void) {
 	char select = 0, rselect = RED;
-	char rstring[10], gstring[10] /* heh */, bstring[10];
+	char rstring[10], gstring[10], bstring[10];
 	while (!osl_quit) {
 		oslStartDrawing();
 		oslReadKeys();
